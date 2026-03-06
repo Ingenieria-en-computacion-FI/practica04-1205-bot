@@ -13,7 +13,7 @@ int main (){
   if (array!=NULL) {
     printf("[ ");
     for (int i = 0; i < n; i++) {
-      printf("%d ", (array + i));
+      printf("%d ", *(array + i));
     }
     printf("]\n");
     free(array);
