@@ -38,9 +38,9 @@ void liberarNodos(Nodo* arreglo, int n){
 
 /* Ejercicio 5 */
 Nodo* construirTresNodos(){
-    Nodo *n1 = crearNodo(1);
-    Nodo *n2 = crearNodo(2);
-    Nodo *n3 = crearNodo(3);
+    Nodo *n1 = crearNodo(10);
+    Nodo *n2 = crearNodo(20);
+    Nodo *n3 = crearNodo(30);
     if(n1 != NULL && n2 != NULL && n3 != NULL) {
         n1->siguiente = n2;
         n2->siguiente = n3;
