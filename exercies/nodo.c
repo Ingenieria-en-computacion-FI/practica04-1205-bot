@@ -22,8 +22,8 @@ Nodo* crearArregloNodos(int n_elementos){
 Nodo* agregarNodo(Nodo* arreglo, int *n, int valor){
     Nodo *nuevo_arreglo = (Nodo*)realloc(arreglo, (*n + 1) * sizeof(Nodo));
     if (nuevo_arreglo != NULL) { 
-        nuevo_arreglo[*n].dato = valor;// -> caundo tienes nodo suelto o individual y [*n] cuando tienes un arreglo de nodos
-        nuevo_arreglo[*n].siguiente = NULL;// nuevo_arreglo[*n].dato = (nuevo_arreglo + *n)->dato
+        (nuevo_arreglo + *n)->dato = valor;// -> caundo tienes nodo suelto o individual y [*n] cuando tienes un arreglo de nodos
+        (nuevo_arreglo + *n)->siguiente = NULL;// (nuevo_arreglo + *n).dato = (nuevo_arreglo + *n)->dato
         (*n)++;
         return nuevo_arreglo;
     }
